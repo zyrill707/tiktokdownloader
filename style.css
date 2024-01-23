@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background-image:url("endless-galaxy.gif");
+  background-size:400px 978px;
+  background-repeat:no-repeat;
+  mix-blend-mode: difference;
+}
+.navbar {
+  font-size:12px;
+  display:flex;
+  flex-direction:row;
+  gap:12px;
+  background:transparent;
+  color:white;
+  opacity:100;
+}
+
+.navbar a{
+  font-size:20px;
+  text-decoration:none;
+  color:white;
+  margin:auto;
+}
+
+.navbar a:active{
+  text-decoration:underline;
+  text-transform:uppercase;
+  transition:5s;
+}
+
+.container{
+  display:flex;;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  top:45%;
+  left:20%;
+  gap:10px;
+}
+
+.container input{
+  border:none;
+  border-bottom:1px solid gray;
+  outline: none;
+  background:transparent;
+  color:white;
+}
+
+.container button{
+  padding:5px 5px;
+  border-radius:5px;
+  background-color:red;
+  border:none;
+  color:lightblue;
+  margin:auto;
+}
+
+.container button:active{
+  background:transparent;
+  background-clip:text;
+  -webkit-background-clip:text;
+}
+
+.preview{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:200px;
+  flex-direction:column;
+  gap:12px;
+}
+#prev {
+  width:50%;
+  height:100%;
+  text-align:center;
+  height:100%;
+}
+
+
+
+#downloadBtn {
+  background:linear-gradient(135deg, gray, white, gray);
+  padding:5px 5px;
+  border-radius:5px;
+  text-transform:uppercase;
+  border:none;
+  color:blue;
+  font-size:15px;
+  animation:anim 2s infinite;
+  transition-delay:1s;
+}
+
+#downloadBtn:active{
+  animation:paused;
+  background-color:blue;
+  color:white;
+}
+
+@keyframes anim{
+  0%{color:black; text-shadow:5px 5px 5px black}
+  
+  50%{color:gray; text-shadow:5px 5px -10px black}
+  70%{color:black; text-shadow:5px 5px -10px black;} 
+  100%{color:silver; text-shadow:5px 5px 10px black;}
+}
+
+.masked {
+  background-image: url("memes-void.gif");
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:transparent;
+  font-size:28px;
+  filter:brightness(4);
+  font-weight:bold;
+}
+
+.info{
+  background:transparent;
+  color:white;
+  position:absolute;
+  top:60%;
+  left:45%;
+}
+
+#creat {
+  color:white;
+  font-weight:bold;
+  background:transparent;
+  mix-blend-mode: difference;
+  padding-top:18px;
+  font-size:15px;
+}
