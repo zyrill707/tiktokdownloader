@@ -33,7 +33,9 @@ body{
 }
 
 .container{
-  display:flex;;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
   justify-content:center;
   align-items:center;
   position:absolute;
@@ -94,7 +96,16 @@ body{
   animation:anim 2s infinite;
   transition-delay:1s;
 }
-
+#conBtn {
+  padding:6px 6px;
+  border-radius:5px;
+  background-color:red;
+  border:none;
+  color:lightblue;
+  font-size:10px;
+  margin:0;
+  margin-left:182px;
+}
 #downloadBtn:active{
   animation:paused;
   background-color:blue;
@@ -136,4 +147,4 @@ body{
   mix-blend-mode: difference;
   padding-top:18px;
   font-size:15px;
-}
+  }
